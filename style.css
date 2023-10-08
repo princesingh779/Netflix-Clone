@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Poppins:ital,wght@0,300;0,400;0,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/main.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: none;
+    background-color: rgb(229, 9, 20);
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+
+}
+
+.language-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 100px;
+    font-size: unset;
+    padding: 5px;
+}
+
+.language-btn img {
+    width: 11px;
+    height: 7px;
+    margin-left: 5px;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.header-content h1 {
+    font-size: 42px;
+    line-height: 65px;
+    font-weight: 600;
+    max-width: 700px;
+
+}
+
+.header-content h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.email-input {
+    display: flex;
+    border: 4px;
+    margin-top: 20px;
+    outline: 0;
+    overflow: hidden;
+
+}
+
+.email-input input {
+
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 5px;
+    margin: 0 5px 0 20px;
+}
+
+.email-input button {
+    background-color: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+/* --------------features---------------------------- */
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/* ---------------------faq--------------------------- */
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+
+.accordion {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    width: 34px;
+    position: absolute;
+    /* background-color: yellow; */
+    font-size: 30px;
+    right: 20px;
+    font-weight: 600;
+    transition: transform 0.5s;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label:after {
+    transform: rotate(135deg);
+}
+
+.faq .email-input {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.faq small {
+    font-size: 14px;
+}
+
+/* ---------------------------------footer------------------------------------ */
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 30px;
+}
+
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer button {
+    color: #777;
+    display: flex;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #777;
+}
+
+.footer button img {
+    font-size: 15px;
+    margin-top: 9px;
+    width: 15px;
+    height: 8px;
+}
+
+.copyright-content {
+    font-size: 16px;
+    color: #777;
+    margin-top: 15px;
+
+}
+
+
+
+/* -----------------------media Queries--------------------------------- */
+
+
+@media only screen and (max-width:600px) {
+    .logo {
+        width: 95px;
+    }
+
+    nav button {
+        padding: 5px 8px;
+    }
+
+    nav .language-btn {
+        padding: 5px 6px;
+    }
+
+    .language-btn {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .header-content {
+        padding-top: 150px;
+    }
+
+    .header-content h1 {
+        font-size: 32px;
+    }
+
+    .email-input button {
+        font-size: 12px;
+        padding: 4px 15px;
+        width: 100px;
+
+    }
+
+    .text-col,
+    .img-col {
+        flex-basis: 100%;
+
+    }
+
+    .features {
+        font-size: 16px;
+    }
+
+    .features h2 {
+        font-size: 34px;
+        font-weight: 500;
+    }
+
+    .features .row:nth-child(2),
+    .features .row:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+
+
+    .faq {
+        padding: 10px 9%;
+    }
+
+    .faq h2 {
+        font-size: 20px;
+    }
+
+    .accordion li label {
+        font-size: 15px;
+    }
+
+    .accordion .content {
+        font-size: 14px;
+    }
+
+    label::after {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .footer h2 {
+        font-size: 13px;
+
+    }
+
+    .footer .row {
+        display: block;
+    }
+}
